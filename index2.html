@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Didático de HTML e CSS</title>
+    <style>
+        /* Estilos CSS */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #0056b3;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #0056b3;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+
+        section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        strong {
+            color: #d35400;
+        }
+
+        em {
+            color: #27ae60;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul, ol {
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 15px auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            color: #555;
+        }
+
+        form {
+            background-color: #e9ecef;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #333;
+            color: white;
+            border-radius: 8px;
+        }
+
+        /* Classes CSS para destaque */
+        .destaque-primario {
+            background-color: #ffebcc;
+            padding: 5px;
+            border-left: 5px solid #ffa500;
+        }
+
+        .texto-centralizado {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Meu Exemplo Didático de HTML e CSS</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Cabeçalhos e Parágrafos</h2>
+            <p>Este é um <strong>parágrafo</strong> de exemplo, mostrando texto comum. Podemos usar a tag `<strong>` para <strong>negrito</strong> e a tag `<em>` para <em>itálico</em>. O HTML é a estrutura da web.</p>
+            <p class="destaque-primario">Este parágrafo utiliza uma <strong>classe CSS</strong> para um destaque visual, mudando sua cor de fundo e adicionando uma borda à esquerda.</p>
+        </section>
+
+        <section>
+            <h2>Listas Ordenadas e Não Ordenadas</h2>
+            <h3>Minha Lista Não Ordenada (`&lt;ul&gt;`)</h3>
+            <ul>
+                <li>Item 1 da lista não ordenada</li>
+                <li>Item 2 da lista não ordenada</li>
+                <li>Item 3 da lista não ordenada</li>
+            </ul>
+
+            <h3>Minha Lista Ordenada (`&lt;ol&gt;`)</h3>
+            <ol>
+                <li>Primeiro item ordenado</li>
+                <li>Segundo item ordenado</li>
+                <li>Terceiro item ordenado</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Links e Imagens</h2>
+            <p>Você pode visitar o <a href="https://www.google.com" target="_blank">Google</a> (abre em nova aba).</p>
+            <p>Aqui está uma imagem de exemplo:</p>
+            <img src="https://via.placeholder.com/400x200?text=Imagem+Exemplo" alt="Uma imagem de placeholder com o texto Imagem Exemplo.">
+        </section>
+
+        <section>
+            <h2>Tabelas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Idade</th>
+                        <th>Cidade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>João</td>
+                        <td>30</td>
+                        <td>São Paulo</td>
+                    </tr>
+                    <tr>
+                        <td>Maria</td>
+                        <td>25</td>
+                        <td>Rio de Janeiro</td>
+                    </tr>
+                    <tr>
+                        <td>Pedro</td>
+                        <td>35</td>
+                        <td>Belo Horizonte</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Formulários</h2>
+            <form action="#" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem aqui..."></textarea>
+
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
+
+        <section class="texto-centralizado">
+            <h2>Div e Span</h2>
+            <p>A tag `&lt;div&gt;` é um container genérico de bloco, enquanto `&lt;span&gt;` é um container genérico de linha. Ambos são muito usados com CSS.</p>
+            <div style="background-color: #e0f2f7; padding: 10px; margin-bottom: 10px;">
+                Este é um <span>conteúdo dentro de um div</span>, com um span embutido.
+            </div>
+            <p>O `&lt;span&gt;` é ótimo para aplicar estilos a <span style="color: purple; font-weight: bold;">partes específicas de um texto</span>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Exemplo Didático. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
